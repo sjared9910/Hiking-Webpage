@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>WNC Grandfather Mountain</title>
+    <link href="Styles/wnc_styles.css" rel="stylesheet" />
+	<script src="Scripts/wnc_script.js"></script>
+</head>
+
+<body>
+	<header id="homepage">
+		<img src="Images/home.png" alt="WNC Trails" />
+	</header>
+	<nav id="list">
+		<ul>
+			<h2>Trails</h2>
+			<li><a href="wnc_home.html">Home</a></li>
+			<li><a href="wnc_fp.html">Fryingpan Tower</a></li>
+			<li><a href="wnc_craggy.html">Craggy Pinnacle Trail</a></li>
+			<li><a href="wnc_whiteside.html">Whiteside Mountain</a></li>
+			<li><a href="wnc_balsam.html">Black Balsam Knob</a></li>
+			<li><a href="wnc_linville.html">Linville Falls</a></li>
+			<li><a href="#">Grandfather Trail</a></li>
+		</ul>
+	</nav>
+	
+	<article id="grandfather_description">
+		<h1>The Grandfather Trail</h1>
+		<p>
+		The Grandfather Trail is located within Grandfather Mountain State Park and is a 2 mile trail up to Calloway Peak. This trail begins with
+		traveling through a spruce forest, up and around rock walls and up the ridge to Calloway Peak. This trail is not for
+		faint of heart but those who choose to complete it are rewarded with one of the greatest views of the Blue Ridge Mountains.
+		</p>
+		<p>
+		The Grandfather Trail is one of the most difficult trails that Western North Carolina has to offer. This 2 mile trail is not for inexperienced hikers.
+		This trail requires extinsive bouldering and climbing multiple ladders in steep sections. Due to the high elevation, extremely high wind gusts can occur making a hard trail even more difficult. 
+		Despite being a tourist attraction, do not under estimate this trail!
+		</p>		
+	</article>
+	
+	<aside id="grandfather_difficulty">
+		<h2>Trail Details</h2>
+		<p><strong>Difficulty:</strong> Most Difficult</p> 
+		<p><strong>Length:</strong> 4.1 miles out and back</p>
+		<p><strong>Climb:</strong> Difficult</p>
+		<p><strong>Lowest Elevation:</strong> 5250 ft</p>
+		<p><strong>Highest Elevation:</strong> 5946 ft</p>
+		<p><strong>Total Climb:</strong> 1341 ft</p>
+		<p><strong>Starting Point:</strong> Black Rock Parking Area</p>
+	</aside>
+	
+	<img src="Images/calloway.png" alt="grandfather" id="calloway" />	
+	
+	<section id="location">
+		<h2>Where to Find</h2>
+		<p>
+		Grandfather Mountain State Park is located between Asheville and Boone North Carolina. For a more scenic drive, take the Blue Ridge Parkway across
+		the Lin Cove Viaduct. US 221 North from Linville NC provides a more direct way to the entrance of the State Park.
+		</p>
+	</section>
+	
+	<form id="reviewForm">
+		<h2>Leave a Review</h2>
+		<label for="firstBox">First Name:</label><br>
+		<input name="fName" id="firstBox" type="text" required /><br>
+			
+		<label for="lastBox">Last Name:</label><br>
+		<input name="lName" id="LastBox" type="text" required /><br>
+			
+		<label for="dateBox">Hike Date:</label>
+		<input name="date" id="dateBox" type="date" required /><br>
+			
+		<label for="commentBox">Trail Comments:</label><br>
+		<textarea name="comment" id="commentBox" cols="60" rows="8" required></textarea><br>
+			
+		<button onclick="formSave(); return false">Submit</button>
+	</form>
+	
+	<section id="reviews">
+		<h3>Reviews</h3>
+		<ul id="rev">	
+		</ul>
+	</section>
+</body>	
+</html>

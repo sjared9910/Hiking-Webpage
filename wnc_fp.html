@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>WNC Fryingpan Tower</title>
+    <link href="Styles/wnc_styles.css" rel="stylesheet" />
+	<script src="Scripts/wnc_script.js"></script>
+</head>
+
+<body>
+	<header id="homepage">
+		<img src="Images/home.png" alt="WNC Trails" />
+	</header>
+	<nav id="list">
+		<ul>
+			<h2>Trails</h2>
+			<li><a href="wnc_home.html">Home</a></li>
+			<li><a href="#">Fryingpan Tower</a></li>
+			<li><a href="wnc_craggy.html">Craggy Pinnacle Trail</a></li>
+			<li><a href="wnc_whiteside.html">Whiteside Mountain</a></li>
+			<li><a href="wnc_balsam.html">Black Balsam Knob</a></li>
+			<li><a href="wnc_linville.html">Linville Falls</a></li>
+			<li><a href="wnc_grandfather.html">Grandfather Trail</a></li>
+		</ul>
+	</nav>
+	
+	<article id="fp_description">
+		<h1>Fryingpan Mountain Tower</h1>
+		<p>
+		Fryingpan Mountain Tower is a 1.5 mile out and back trail that takes you out to an old fire lookout tower at the summit of Fryingpan Mountain.
+		This tower rises up 70ft to give you a breathtaking view of the Blue Ridge Mountains and the Pisgah National Forest. This tower gives a fantastic
+		view of nearby peaks of Looking Glass Rock, Mt. Pisgah, and Cold Mountain.
+		</p>
+		<p>
+		This short hike takes you from the Blue Ridge Parkway up an old forest service road to the tower and the mountain summit. This road is a slight
+		but continuouses climb to the top. The trail being a road makes it very wide and easy to follow and is well maintained. Due to the high elevation, 
+		high winds and cold temperatures can occur. Plan accordingly to weather and season.
+		</p>		
+	</article>
+	
+	<aside id="fp_difficulty">
+		<h2>Trail Details</h2>
+		<p><strong>Difficulty:</strong> Moderate</p> 
+		<p><strong>Length:</strong> 1.5 miles out and back</p>
+		<p><strong>Climb:</strong> Moderate</p>
+		<p><strong>Lowest Elevation:</strong> 4983ft</p>
+		<p><strong>Highest Elevation:</strong> 5340ft</p>
+		<p><strong>Total Climb:</strong> 357ft</p>
+		<p><strong>Starting Point:</strong> Blue Ridge Parkway milepost 409, Forest Service Road 409</p>	
+	</aside>
+	
+	<img src="Images/fptower.png" alt="fryingpan" />	
+	
+	<section id="location">
+		<h2>Where to Find</h2>
+		<p>
+		To get to Fryingpan Mountain Tower, take the Blue Ridge Parkway South from downtown Asheville to milepost 409. There is no parking area so you
+		will have to park on the side of the road near Forest Service Road 450. The gate will always be closed, just walk around it.
+		</p>
+	</section>
+	
+	<form id="reviewForm">
+		<h2>Leave a Review</h2>
+		<label for="firstBox">First Name:</label><br>
+		<input name="fName" id="firstBox" type="text" required /><br>
+			
+		<label for="lastBox">Last Name:</label><br>
+		<input name="lName" id="LastBox" type="text" required /><br>
+			
+		<label for="dateBox">Hike Date:</label>
+		<input name="date" id="dateBox" type="date" required /><br>
+			
+		<label for="commentBox">Trail Comments:</label><br>
+		<textarea name="comment" id="commentBox" cols="60" rows="8" required></textarea><br>
+			
+		<button onclick="formSave(); return false">Submit</button>
+	</form>
+	
+	<section id="reviews">
+		<h3>Reviews</h3>
+		<ul id="rev">	
+		</ul>
+	</section>
+</body>	
+</html>

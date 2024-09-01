@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>WNC Black Balsam</title>
+    <link href="Styles/wnc_styles.css" rel="stylesheet" />
+	<script src="Scripts/wnc_script.js"></script>
+</head>
+
+<body>
+	<header id="homepage">
+		<img src="Images/home.png" alt="WNC Trails" />
+	</header>
+	<nav id="list">
+		<ul>
+			<h2>Trails</h2>
+			<li><a href="wnc_home.html">Home</a></li>
+			<li><a href="wnc_fp.html">Fryingpan Tower</a></li>
+			<li><a href="wnc_craggy.html">Craggy Pinnacle Trail</a></li>
+			<li><a href="wnc_whiteside.html">Whiteside Mountain</a></li>
+			<li><a href="#">Black Balsam Knob</a></li>
+			<li><a href="wnc_linville.html">Linville Falls</a></li>
+			<li><a href="wnc_grandfather.html">Grandfather Trail</a></li>
+		</ul>
+	</nav>
+	
+	<article id="balsam_desc">
+		<h1>Black Balsam Knob via the Art Loeb Trail</h1>
+		<p>
+		Take a hike to Black Balsam Knob Recreation Area via the Art Loeb Trail where you will see some of the most spectacular mountain balds in the Appalachians.
+		The treeless mountaintops allows for some of the best views of the the Blue Ridge Moountains. This area features many other bald mountaintops and hiking 
+		trails for you to explore.
+		</p>
+		<p>
+		While there are many ways to get to Black Balsam Knob, the easist is via the Art Loeb Trail. Here you will find an 0.7 
+		mile trails going to the summit of Tennent mountain. This trail is moderatly steep with a total climb of 425ft. 
+		Other trail options are avaible that are longer and less steep. Due to the high elevation, high winds and cold temperatures can 
+		occur. Plan accordingly to weather and season.
+		</p>	
+	</article>
+		
+	<aside id="balsam_dif">	
+		<h2>Trail Details</h2>
+		<p><strong>Difficulty:</strong> Moderate</p> 
+		<p><strong>Length:</strong> 1.5 miles out and back</p>
+		<p><strong>Climb:</strong> challenging</p>
+		<p><strong>Lowest Elevation:</strong> 5789ft</p>
+		<p><strong>Highest Elevation:</strong> 6214ft</p>
+		<p><strong>Total Climb:</strong> 425ft</p>
+		<p><strong>Starting Point:</strong>Black Balsam parking lot at Blue Ridge Parkway milepost 420</p>
+	</aside>
+	
+	<img src="Images/balsam.png" alt="balsam"/>
+	
+	<section id="location">
+		<h2>Where to Find</h2>
+		<p>
+		To get to Black Balsam Knob via the Art Loeb Trail, take the Blue Ridge Parkway south from downtown Asheville
+		to milepost 420. Here you will see a parking area for the Art Loeb trailhead.
+		</p>
+	</section>
+	
+	<form id="reviewForm">
+		<h2>Leave a Review</h2>
+		<label for="firstBox">First Name:</label><br>
+		<input name="fName" id="firstBox" type="text" required /><br>
+			
+		<label for="lastBox">Last Name:</label><br>
+		<input name="lName" id="LastBox" type="text" required /><br>
+			
+		<label for="dateBox">Hike Date:</label>
+		<input name="date" id="dateBox" type="date" required /><br>
+			
+		<label for="commentBox">Trail Comments:</label><br>
+		<textarea name="comment" id="commentBox" cols="60" rows="8" required></textarea><br>
+			
+		<button onclick="formSave(); return false">Submit</button>
+	</form>
+	
+	<section id="reviews">
+		<h3>Reviews</h3>
+		<ul id="rev">	
+		</ul>
+	</section>
+</body>	
+</html>

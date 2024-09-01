@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>WNC Whiteside</title>
+    <link href="Styles/wnc_styles.css" rel="stylesheet" />
+	<script src="Scripts/wnc_script.js"></script>
+</head>
+
+<body>
+	<header id="homepage">
+		<img src="Images/home.png" alt="WNC Trails" />
+	</header>
+	<nav id="list">
+		<ul>
+			<h2>Trails</h2>
+			<li><a href="wnc_home.html">Home</a></li>
+			<li><a href="wnc_fp.html">Fryingpan Tower</a></li>
+			<li><a href="wnc_craggy.html">Craggy Pinnacle Trail</a></li>
+			<li><a href="#">Whiteside Mountain</a></li>
+			<li><a href="wnc_balsam.html">Black Balsam Knob</a></li>
+			<li><a href="wnc_linville.html">Linville Falls</a></li>
+			<li><a href="wnc_grandfather.html">Grandfather Trail</a></li>
+		</ul>
+	</nav>
+	
+	<article id="whiteside_description">
+		<h1>Whiteside Mountain Trail</h1>
+		<p>
+		Whiteside Mountain Trail is a 2.5 mile round trip that follows the 700ft high cliffs to the 4930 ft summit. This
+		trail offers amazing mountain views for hikers with cliffs topped with mountain laurel. This trail climbs an old road
+		along the spectacular cliffs of Whiteside Mountain to the summit where you will find an amazing view of the Blue Ridge Mountains.
+		</p>
+		<p>
+		This moderately difficult trail starts from the Whiteside Mountain parking area and begins fairly steep up to an old roadbed.
+		Following the slightly steep roadbed will bring will bring you to a fork in the path. To the left is an easier but longer ascent to the summit
+		while to the right is a shorter and steeper ascent. Due to the high elevation, high winds and cold temperatures can occur. 
+		Plan accordingly to weather and season.
+		</p>		
+	</article>
+	
+	<aside id="whiteside_difficulty">
+		<h2>Trail Details</h2>
+		<p><strong>Difficulty:</strong> Moderate</p> 
+		<p><strong>Length:</strong> 2.5 miles round trip</p>
+		<p><strong>Climb:</strong> Moderate</p>
+		<p><strong>Lowest Elevation:</strong> 4410ft</p>
+		<p><strong>Highest Elevation:</strong> 4930ft</p>
+		<p><strong>Total Climb:</strong> 600ft</p>
+		<p><strong>Starting Point:</strong> Whiteside Mountain Parking Area</p>
+	</aside>
+	
+	<img src="Images/whiteside.png" alt="whiteside" />	
+	
+	<section id="location">
+		<h2>Where to Find</h2>
+		<p>
+		This trail is located within the Nantahala Ranger District area. Starting in Highlands NC, follow US 64 East for 5.4 miles.
+		Look for a sign for the Whiteside Mountain Recreation Area and turn onto Whiteside Mt. Rd. Follow this road for 1 mile and there
+		will be a pay both. The trail begins from the parking area.
+		</p>
+	</section>
+	
+	<form id="reviewForm">
+		<h2>Leave a Review</h2>
+		<label for="firstBox">First Name:</label><br>
+		<input name="fName" id="firstBox" type="text" required /><br>
+			
+		<label for="lastBox">Last Name:</label><br>
+		<input name="lName" id="LastBox" type="text" required /><br>
+			
+		<label for="dateBox">Hike Date:</label>
+		<input name="date" id="dateBox" type="date" required /><br>
+			
+		<label for="commentBox">Trail Comments:</label><br>
+		<textarea name="comment" id="commentBox" cols="60" rows="8" required></textarea><br>
+			
+		<button onclick="formSave(); return false">Submit</button>
+	</form>
+	
+	<section id="reviews">
+		<h3>Reviews</h3>
+		<ul id="rev">	
+		</ul>
+	</section>
+</body>	
+</html>

@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>WNC Linville Falls</title>
+    <link href="Styles/wnc_styles.css" rel="stylesheet" />
+	<script src="Scripts/wnc_script.js"></script>
+</head>
+
+<body>
+	<header id="homepage">
+		<img src="Images/home.png" alt="WNC Trails" />
+	</header>
+	<nav id="list">
+		<ul>
+			<h2>Trails</h2>
+			<li><a href="wnc_home.html">Home</a></li>
+			<li><a href="wnc_fp.html">Fryingpan Tower</a></li>
+			<li><a href="wnc_craggy.html">Craggy Pinnacle Trail</a></li>
+			<li><a href="wnc_whiteside.html">Whiteside Mountain</a></li>
+			<li><a href="wnc_balsam.html">Black Balsam Knob</a></li>
+			<li><a href="#">Linville Falls</a></li>
+			<li><a href="wnc_grandfather.html">Grandfather Trail</a></li>
+		</ul>
+	</nav>
+	
+	<article id="linville_description">
+		<h1>Linville Falls via Erwin's View Trail</h1>
+		<p>
+		Linville Falls is perhaps the most photographed waterfall in North Carolina. Find yourself on the Erwin's View trail, a 2.2 mile trail from the top of the waterfall
+		up to numerous overlook points to view the falls. Here you can see the complete falls as it goes falls 90ft into the plunge basin. If your feeling more adventurous, take the 1.2 mile
+		descent down to the plunge basin and view the bottom of the falls.
+		</p>
+		<p>
+		The Erwin's View overlook trail is an easy trail with some elevation change. This trail located off the Blue Ridge Parkway and features a paved walkway
+		to the top of the falls with no elevation change. The trail to the overlook is a wide, well walked trail and is easy to navigate. The 1.2 mile trip is slightly uphill 
+		with many overlook positions to stop at along the way.
+		</p>		
+	</article>
+	
+	<aside id="linville_difficulty">
+		<h2>Trail Details</h2>
+		<p><strong>Difficulty:</strong> Easy</p> 
+		<p><strong>Length:</strong> 2.2 miles out and back</p>
+		<p><strong>Climb:</strong> Easy</p>
+		<p><strong>Lowest Elevation:</strong> 3160 ft</p>
+		<p><strong>Highest Elevation:</strong> 3360 ft</p>
+		<p><strong>Total Climb:</strong> 300 ft</p>
+		<p><strong>Starting Point:</strong> Blue Ridge Parkway milepost 316</p>	
+	</aside>
+	
+	<img src="Images/linville.png" alt="linville" />	
+	
+	<section id="location">
+		<h2>Where to Find</h2>
+		<p>
+		Linville Falls is located along the Blue Ridge Parkway at milepost 316. There will be a sign directing to the parking lot. The start of the trail is located
+		next to the giftshop.
+		</p>
+	</section>
+	
+	<form id="reviewForm">
+		<h2>Leave a Review</h2>
+		<label for="firstBox">First Name:</label><br>
+		<input name="fName" id="firstBox" type="text" required /><br>
+			
+		<label for="lastBox">Last Name:</label><br>
+		<input name="lName" id="LastBox" type="text" required /><br>
+			
+		<label for="dateBox">Hike Date:</label>
+		<input name="date" id="dateBox" type="date" required /><br>
+			
+		<label for="commentBox">Trail Comments:</label><br>
+		<textarea name="comment" id="commentBox" cols="60" rows="8" required></textarea><br>
+			
+		<button onclick="formSave(); return false">Submit</button>
+	</form>
+	
+	<section id="reviews">
+		<h3>Reviews</h3>
+		<ul id="rev">	
+		</ul>
+	</section>
+</body>	
+</html>

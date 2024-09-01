@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>WNC Pinnacle Trail</title>
+    <link href="Styles/wnc_styles.css" rel="stylesheet" />
+	<script src="Scripts/wnc_script.js"></script>
+</head>
+
+<body>
+	<header id="homepage">
+		<img src="Images/home.png" alt="WNC Trails" />
+	</header>
+	<nav id="list">
+		<ul>
+			<h2>Trails</h2>
+			<li><a href="wnc_home.html">Home</a></li>
+			<li><a href="wnc_fp.html">Fryingpan Tower</a></li>
+			<li><a href="#">Craggy Pinnacle Trail</a></li>
+			<li><a href="wnc_whiteside.html">Whiteside Mountain</a></li>
+			<li><a href="wnc_balsam.html">Black Balsam Knob</a></li>
+			<li><a href="wnc_linville.html">Linville Falls</a></li>
+			<li><a href="wnc_grandfather.html">Grandfather Trail</a></li>
+		</ul>
+	</nav>
+	
+	<article id="pinnacle_description">
+		<h1>Craggy Pinnacle Trail</h1>
+		<p>
+		Find yourself on a short 1.4 mile out and back trail to the summit of Craggy Dome. This short and
+		moderately steep trail takes you from the Blue Ridge Parkway through a high elevation forest
+		of birch trees and up to the summit where you can experience a beautiful 360 degree view of the Blue Ridge Mountains. 
+		</p>
+		<p>
+		This moderately difficult trail is well walked and has an easy to follow path. The trail is very rocky and steep
+		in sections with many rock steps. The trail has many cutoffs for those who need to take a break on the ascent. 
+		Due to the high elevation, high winds and cold temperatures can occur Plan accordingly to weather and season.
+		</p>
+	</article>
+	<aside id="pinnacle_difficulty">
+		<h2>Trail Details</h2>
+		<p><strong>Difficulty:</strong> Moderate</p> 
+		<p><strong>Length:</strong> 1.4 miles out and back</p>
+		<p><strong>Climb:</strong> Moderate</p>
+		<p><strong>Lowest Elevation:</strong> 5660ft</p>
+		<p><strong>Highest Elevation:</strong> 5892ft</p>
+		<p><strong>Total Climb:</strong> 250ft</p>
+		<p><strong>Starting Point:</strong> Craggy Dome Overlook at Blue Ridge Parkway Mile 364</p>
+	</aside>
+	
+	<img src="Images/craggy.png" alt="craggy" />
+	
+	<section id="location">
+		<h2>Where to Find</h2>
+		<p>
+		To get to the Craggy Pinnacle Trail, take the Blue Ridge Parkway north from downtown Asheville.
+		The visitor center is located at mile marker 364 and after passing through the Craggy Pinnacle
+		Tunnel, the Craggy Dome parking lot will be on the left.
+		</p>
+	</section>
+	
+	<form id="reviewForm">
+		<h2>Leave a Review</h2>
+		<label for="firstBox">First Name:</label><br>
+		<input name="fName" id="firstBox" type="text" required /><br>
+			
+		<label for="lastBox">Last Name:</label><br>
+		<input name="lName" id="LastBox" type="text" required /><br>
+			
+		<label for="dateBox">Hike Date:</label>
+		<input name="date" id="dateBox" type="date" required /><br>
+			
+		<label for="commentBox">Trail Comments:</label><br>
+		<textarea name="comment" id="commentBox" cols="60" rows="8" required></textarea><br>
+			
+		<button onclick="formSave(); return false">Submit</button>
+	</form>
+	
+	<section id="reviews">
+		<h3>Reviews</h3>
+		<ul id="rev">	
+		</ul>
+	</section>
+</body>	
+</html>
